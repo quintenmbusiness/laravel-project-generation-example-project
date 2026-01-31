@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1769881893">
+  <project timestamp="1769881893" name="Clover Coverage">
+    <package name="App\Http\Controllers">
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Http\Controllers\Controller.php">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="6" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\BillingAddress.php">
+        <class name="App\Models\BillingAddress" namespace="App\Models">
+          <metrics complexity="4" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="29" type="method" name="customer" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="orders" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="39" type="method" name="customers" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="44" type="method" name="shippingAddresses" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <metrics loc="49" ncloc="49" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Cache.php">
+        <class name="App\Models\Cache" namespace="App\Models">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="22" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\CacheLock.php">
+        <class name="App\Models\CacheLock" namespace="App\Models">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="22" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Category.php">
+        <class name="App\Models\Category" namespace="App\Models">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="23" type="method" name="products" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <metrics loc="28" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Coupon.php">
+        <class name="App\Models\Coupon" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="29" type="method" name="orderCoupons" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="orders" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <metrics loc="39" ncloc="39" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Customer.php">
+        <class name="App\Models\Customer" namespace="App\Models">
+          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="23" type="method" name="billingAddresses" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="method" name="orders" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="33" type="method" name="shippingAddresses" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="38" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Migration.php">
+        <class name="App\Models\Migration" namespace="App\Models">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="17" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Order.php">
+        <class name="App\Models\Order" namespace="App\Models">
+          <metrics complexity="7" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="14" coveredelements="0"/>
+        </class>
+        <line num="36" type="method" name="billingAddress" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="customer" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="shippingAddress" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="orderCoupons" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="orderProducts" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="61" type="method" name="coupons" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="66" type="method" name="productVariants" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <metrics loc="71" ncloc="71" classes="1" methods="7" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="14" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\OrderCoupon.php">
+        <class name="App\Models\OrderCoupon" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="27" type="method" name="coupon" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="32" type="method" name="order" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <metrics loc="37" ncloc="37" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\OrderProduct.php">
+        <class name="App\Models\OrderProduct" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="32" type="method" name="order" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="37" type="method" name="productVariant" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="42" ncloc="42" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\Product.php">
+        <class name="App\Models\Product" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="32" type="method" name="category" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="37" type="method" name="productVariants" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="42" ncloc="42" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\ProductVariant.php">
+        <class name="App\Models\ProductVariant" namespace="App\Models">
+          <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="32" type="method" name="product" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="37" type="method" name="orderProducts" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="42" type="method" name="orders" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <metrics loc="47" ncloc="47" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Models\ShippingAddress.php">
+        <class name="App\Models\ShippingAddress" namespace="App\Models">
+          <metrics complexity="4" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="29" type="method" name="customer" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="34" type="method" name="orders" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="39" type="method" name="billingAddresses" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="44" type="method" name="customers" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <metrics loc="49" ncloc="49" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Providers\AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="13" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="method" name="boot" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <metrics loc="23" ncloc="17" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Repositories">
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\BillingAddressRepository.php">
+        <class name="App\Repositories\BillingAddressRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\CacheLockRepository.php">
+        <class name="App\Repositories\CacheLockRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\CacheRepository.php">
+        <class name="App\Repositories\CacheRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\CategoryRepository.php">
+        <class name="App\Repositories\CategoryRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\CouponRepository.php">
+        <class name="App\Repositories\CouponRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\CustomerRepository.php">
+        <class name="App\Repositories\CustomerRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\MigrationRepository.php">
+        <class name="App\Repositories\MigrationRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\OrderCouponRepository.php">
+        <class name="App\Repositories\OrderCouponRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\OrderProductRepository.php">
+        <class name="App\Repositories\OrderProductRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\OrderRepository.php">
+        <class name="App\Repositories\OrderRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\ProductRepository.php">
+        <class name="App\Repositories\ProductRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\ProductVariantRepository.php">
+        <class name="App\Repositories\ProductVariantRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Repositories\ShippingAddressRepository.php">
+        <class name="App\Repositories\ShippingAddressRepository" namespace="App\Repositories">
+          <metrics complexity="12" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="all" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="16" type="method" name="paginate" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="method" name="find" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="findOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="method" name="delete" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="73" ncloc="73" classes="1" methods="10" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="28" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Services">
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\BillingAddressService.php">
+        <class name="App\Services\BillingAddressService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\CacheLockService.php">
+        <class name="App\Services\CacheLockService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\CacheService.php">
+        <class name="App\Services\CacheService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\CategoryService.php">
+        <class name="App\Services\CategoryService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\CouponService.php">
+        <class name="App\Services\CouponService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\CustomerService.php">
+        <class name="App\Services\CustomerService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\MigrationService.php">
+        <class name="App\Services\MigrationService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\OrderCouponService.php">
+        <class name="App\Services\OrderCouponService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\OrderProductService.php">
+        <class name="App\Services\OrderProductService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\OrderService.php">
+        <class name="App\Services\OrderService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\ProductService.php">
+        <class name="App\Services\ProductService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\ProductVariantService.php">
+        <class name="App\Services\ProductVariantService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\denni\Herd\laravel-project-generation-example-project\app\Services\ShippingAddressService.php">
+        <class name="App\Services\ShippingAddressService" namespace="App\Services">
+          <metrics complexity="10" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="repository" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="17" type="method" name="getAll" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="26" type="method" name="getOrFail" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="method" name="findBy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="36" type="method" name="create" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="41" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="method" name="updateWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="method" name="delete" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="56" type="method" name="deleteWhere" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="61" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="20" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="41" loc="2274" ncloc="2268" classes="37" methods="279" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="409" coveredstatements="0" elements="688" coveredelements="0"/>
+  </project>
+</coverage>

@@ -15,7 +15,7 @@ final class CacheTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Cache();
         $expected = [
@@ -29,21 +29,20 @@ final class CacheTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testCastForExpirationIsInt()
+    public function testCastForExpirationIsInt(): void
     {
         $model = new Cache();
         self::assertArrayHasKey('expiration', $model->getCasts());
         self::assertSame('int', $model->getCasts()['expiration']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Cache::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Cache::factory()->make();
         self::assertInstanceOf(Cache::class, $instance);
     }

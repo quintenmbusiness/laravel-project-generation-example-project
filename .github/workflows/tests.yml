@@ -1,10 +1,11 @@
-name: tests
+name: CI Tests
 
 on:
   push:
     branches:
       - main
       - master
+      - '**'  # all branches
   pull_request:
 
 jobs:
@@ -19,8 +20,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.2
-          extensions: mbstring, dom, pdo, sqlite
-          coverage: none
+          extensions: mbstring, dom, pdo, sqlite, xdebug
+          coverage: pcov
 
       - name: Install dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
@@ -34,10 +35,18 @@ jobs:
       - name: Run migrations
         run: php artisan migrate --force
 
-      - name: Run PHPUnit if tests exist
+      - name: Run PHPUnit with coverage
         run: |
           if [ -f "phpunit.xml" ] || [ -f "phpunit.xml.dist" ]; then
-            vendor/bin/phpunit
+            vendor/bin/phpunit --coverage-clover=storage/coverage/clover.xml --coverage-html=storage/coverage/html
           else
             echo "No PHPUnit configuration found. Skipping tests."
           fi
+
+      - name: Publish coverage to current branch
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: ${{ github.ref_name }}
+          publish_dir: storage/coverage/html
+          allow_empty_commit: true

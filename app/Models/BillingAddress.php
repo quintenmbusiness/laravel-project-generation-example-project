@@ -13,6 +13,7 @@ class BillingAddress extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'billing_addresses';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'customer_id',
         'label',

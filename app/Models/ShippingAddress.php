@@ -13,6 +13,7 @@ class ShippingAddress extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'shipping_addresses';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'customer_id',
         'label',

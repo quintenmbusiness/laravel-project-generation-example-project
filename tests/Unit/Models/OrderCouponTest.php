@@ -16,7 +16,7 @@ final class OrderCouponTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new OrderCoupon();
         $expected = [
@@ -30,7 +30,7 @@ final class OrderCouponTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationCouponExistsAndReturnsRelation()
+    public function testRelationCouponExistsAndReturnsRelation(): void
     {
         $model = new OrderCoupon();
         self::assertTrue(method_exists($model, 'coupon'));
@@ -38,7 +38,7 @@ final class OrderCouponTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationOrderExistsAndReturnsRelation()
+    public function testRelationOrderExistsAndReturnsRelation(): void
     {
         $model = new OrderCoupon();
         self::assertTrue(method_exists($model, 'order'));
@@ -46,42 +46,41 @@ final class OrderCouponTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new OrderCoupon();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForOrderIdIsInt()
+    public function testCastForOrderIdIsInt(): void
     {
         $model = new OrderCoupon();
         self::assertArrayHasKey('order_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['order_id']);
     }
 
-    public function testCastForCouponIdIsInt()
+    public function testCastForCouponIdIsInt(): void
     {
         $model = new OrderCoupon();
         self::assertArrayHasKey('coupon_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['coupon_id']);
     }
 
-    public function testCastForDiscountAmountIsFloat()
+    public function testCastForDiscountAmountIsFloat(): void
     {
         $model = new OrderCoupon();
         self::assertArrayHasKey('discount_amount', $model->getCasts());
         self::assertSame('float', $model->getCasts()['discount_amount']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(OrderCoupon::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = OrderCoupon::factory()->make();
         self::assertInstanceOf(OrderCoupon::class, $instance);
     }

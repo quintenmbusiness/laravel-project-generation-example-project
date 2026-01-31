@@ -12,6 +12,7 @@ class Product extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'products';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'sku',
         'title',

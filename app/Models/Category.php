@@ -11,6 +11,7 @@ class Category extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'categories';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'slug',
         'name',

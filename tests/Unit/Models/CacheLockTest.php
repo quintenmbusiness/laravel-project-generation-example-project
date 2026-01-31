@@ -15,7 +15,7 @@ final class CacheLockTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new CacheLock();
         $expected = [
@@ -29,21 +29,20 @@ final class CacheLockTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testCastForExpirationIsInt()
+    public function testCastForExpirationIsInt(): void
     {
         $model = new CacheLock();
         self::assertArrayHasKey('expiration', $model->getCasts());
         self::assertSame('int', $model->getCasts()['expiration']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(CacheLock::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = CacheLock::factory()->make();
         self::assertInstanceOf(CacheLock::class, $instance);
     }

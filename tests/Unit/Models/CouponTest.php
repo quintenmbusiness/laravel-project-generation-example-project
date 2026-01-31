@@ -16,7 +16,7 @@ final class CouponTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Coupon();
         $expected = [
@@ -32,7 +32,7 @@ final class CouponTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationOrderCouponsExistsAndReturnsRelation()
+    public function testRelationOrderCouponsExistsAndReturnsRelation(): void
     {
         $model = new Coupon();
         self::assertTrue(method_exists($model, 'orderCoupons'));
@@ -40,35 +40,34 @@ final class CouponTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Coupon();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForValueIsFloat()
+    public function testCastForValueIsFloat(): void
     {
         $model = new Coupon();
         self::assertArrayHasKey('value', $model->getCasts());
         self::assertSame('float', $model->getCasts()['value']);
     }
 
-    public function testCastForActiveIsBool()
+    public function testCastForActiveIsBool(): void
     {
         $model = new Coupon();
         self::assertArrayHasKey('active', $model->getCasts());
         self::assertSame('bool', $model->getCasts()['active']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Coupon::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Coupon::factory()->make();
         self::assertInstanceOf(Coupon::class, $instance);
     }

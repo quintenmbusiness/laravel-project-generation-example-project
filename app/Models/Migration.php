@@ -10,6 +10,7 @@ class Migration extends Model
     use HasFactory;
     public $timestamps = false;
     protected $table = 'migrations';
+    protected $primaryKey = 'id';
     protected $fillable = ['migration', 'batch'];
     protected $casts = ['id' => 'int', 'batch' => 'int'];
 }

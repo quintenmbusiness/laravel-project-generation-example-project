@@ -17,7 +17,7 @@ final class ProductVariantTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new ProductVariant();
         $expected = [
@@ -34,7 +34,7 @@ final class ProductVariantTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationProductExistsAndReturnsRelation()
+    public function testRelationProductExistsAndReturnsRelation(): void
     {
         $model = new ProductVariant();
         self::assertTrue(method_exists($model, 'product'));
@@ -42,7 +42,7 @@ final class ProductVariantTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationOrderProductsExistsAndReturnsRelation()
+    public function testRelationOrderProductsExistsAndReturnsRelation(): void
     {
         $model = new ProductVariant();
         self::assertTrue(method_exists($model, 'orderProducts'));
@@ -50,42 +50,41 @@ final class ProductVariantTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new ProductVariant();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForProductIdIsInt()
+    public function testCastForProductIdIsInt(): void
     {
         $model = new ProductVariant();
         self::assertArrayHasKey('product_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['product_id']);
     }
 
-    public function testCastForPriceIsFloat()
+    public function testCastForPriceIsFloat(): void
     {
         $model = new ProductVariant();
         self::assertArrayHasKey('price', $model->getCasts());
         self::assertSame('float', $model->getCasts()['price']);
     }
 
-    public function testCastForStockIsInt()
+    public function testCastForStockIsInt(): void
     {
         $model = new ProductVariant();
         self::assertArrayHasKey('stock', $model->getCasts());
         self::assertSame('int', $model->getCasts()['stock']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(ProductVariant::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = ProductVariant::factory()->make();
         self::assertInstanceOf(ProductVariant::class, $instance);
     }
