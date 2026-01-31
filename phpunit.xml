@@ -4,6 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true"
          stopOnFailure="false">
+
     <testsuites>
         <testsuite name="Unit">
             <directory>tests/Unit</directory>
@@ -12,17 +13,13 @@
             <directory>tests/Feature</directory>
         </testsuite>
     </testsuites>
-    <coverage>
-        <report>
-            <clover outputFile="storage/coverage/clover.xml"/>
-            <html outputDirectory="storage/coverage/html"/>
-        </report>
-    </coverage>
+
     <source>
         <include>
-            <directory>app</directory>
+            <directory suffix=".php">app</directory>
         </include>
     </source>
+
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
@@ -38,4 +35,5 @@
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="NIGHTWATCH_ENABLED" value="false"/>
     </php>
+
 </phpunit>
