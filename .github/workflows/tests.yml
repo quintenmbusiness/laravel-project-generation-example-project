@@ -38,7 +38,7 @@ jobs:
 
       - run: |
           if [ -f "phpunit.xml" ] || [ -f "phpunit.xml.dist" ]; then
-            vendor/bin/phpunit --fail-on-warning=false --coverage-html=storage/coverage/html
+            vendor/bin/phpunit --coverage-html=storage/coverage/html
           else
             echo "No PHPUnit configuration found. Skipping tests."
           fi
