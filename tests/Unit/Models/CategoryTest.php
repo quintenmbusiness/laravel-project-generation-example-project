@@ -16,7 +16,7 @@ final class CategoryTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Category();
         $expected = [
@@ -31,7 +31,7 @@ final class CategoryTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationProductsExistsAndReturnsRelation()
+    public function testRelationProductsExistsAndReturnsRelation(): void
     {
         $model = new Category();
         self::assertTrue(method_exists($model, 'products'));
@@ -39,21 +39,20 @@ final class CategoryTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Category();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Category::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Category::factory()->make();
         self::assertInstanceOf(Category::class, $instance);
     }

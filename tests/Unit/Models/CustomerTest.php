@@ -16,7 +16,7 @@ final class CustomerTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Customer();
         $expected = [
@@ -31,7 +31,7 @@ final class CustomerTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationBillingAddressesExistsAndReturnsRelation()
+    public function testRelationBillingAddressesExistsAndReturnsRelation(): void
     {
         $model = new Customer();
         self::assertTrue(method_exists($model, 'billingAddresses'));
@@ -39,7 +39,7 @@ final class CustomerTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testRelationOrdersExistsAndReturnsRelation()
+    public function testRelationOrdersExistsAndReturnsRelation(): void
     {
         $model = new Customer();
         self::assertTrue(method_exists($model, 'orders'));
@@ -47,7 +47,7 @@ final class CustomerTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testRelationShippingAddressesExistsAndReturnsRelation()
+    public function testRelationShippingAddressesExistsAndReturnsRelation(): void
     {
         $model = new Customer();
         self::assertTrue(method_exists($model, 'shippingAddresses'));
@@ -55,21 +55,20 @@ final class CustomerTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Customer();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Customer::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Customer::factory()->make();
         self::assertInstanceOf(Customer::class, $instance);
     }

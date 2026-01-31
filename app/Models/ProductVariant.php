@@ -13,6 +13,7 @@ class ProductVariant extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'product_variants';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'product_id',
         'sku',

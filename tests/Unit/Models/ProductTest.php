@@ -17,7 +17,7 @@ final class ProductTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Product();
         $expected = [
@@ -35,7 +35,7 @@ final class ProductTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationCategoryExistsAndReturnsRelation()
+    public function testRelationCategoryExistsAndReturnsRelation(): void
     {
         $model = new Product();
         self::assertTrue(method_exists($model, 'category'));
@@ -43,7 +43,7 @@ final class ProductTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationProductVariantsExistsAndReturnsRelation()
+    public function testRelationProductVariantsExistsAndReturnsRelation(): void
     {
         $model = new Product();
         self::assertTrue(method_exists($model, 'productVariants'));
@@ -51,42 +51,41 @@ final class ProductTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Product();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForCategoryIdIsInt()
+    public function testCastForCategoryIdIsInt(): void
     {
         $model = new Product();
         self::assertArrayHasKey('category_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['category_id']);
     }
 
-    public function testCastForPriceIsFloat()
+    public function testCastForPriceIsFloat(): void
     {
         $model = new Product();
         self::assertArrayHasKey('price', $model->getCasts());
         self::assertSame('float', $model->getCasts()['price']);
     }
 
-    public function testCastForActiveIsBool()
+    public function testCastForActiveIsBool(): void
     {
         $model = new Product();
         self::assertArrayHasKey('active', $model->getCasts());
         self::assertSame('bool', $model->getCasts()['active']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Product::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Product::factory()->make();
         self::assertInstanceOf(Product::class, $instance);
     }

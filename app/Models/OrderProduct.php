@@ -11,6 +11,7 @@ class OrderProduct extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'order_products';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'order_id',
         'product_variant_id',

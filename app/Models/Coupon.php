@@ -12,6 +12,7 @@ class Coupon extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = 'coupons';
+    protected $primaryKey = 'id';
     protected $fillable = [
         'code',
         'type',

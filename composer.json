@@ -12,7 +12,7 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "quintenmbusiness/laravel-project-generation": "0.1.2"
+        "quintenmbusiness/laravel-project-generation": "0.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

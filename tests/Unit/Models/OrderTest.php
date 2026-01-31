@@ -17,7 +17,7 @@ final class OrderTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Order();
         $expected = [
@@ -36,7 +36,7 @@ final class OrderTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationBillingAddressExistsAndReturnsRelation()
+    public function testRelationBillingAddressExistsAndReturnsRelation(): void
     {
         $model = new Order();
         self::assertTrue(method_exists($model, 'billingAddress'));
@@ -44,7 +44,7 @@ final class OrderTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationCustomerExistsAndReturnsRelation()
+    public function testRelationCustomerExistsAndReturnsRelation(): void
     {
         $model = new Order();
         self::assertTrue(method_exists($model, 'customer'));
@@ -52,7 +52,7 @@ final class OrderTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationShippingAddressExistsAndReturnsRelation()
+    public function testRelationShippingAddressExistsAndReturnsRelation(): void
     {
         $model = new Order();
         self::assertTrue(method_exists($model, 'shippingAddress'));
@@ -60,7 +60,7 @@ final class OrderTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationOrderCouponsExistsAndReturnsRelation()
+    public function testRelationOrderCouponsExistsAndReturnsRelation(): void
     {
         $model = new Order();
         self::assertTrue(method_exists($model, 'orderCoupons'));
@@ -68,7 +68,7 @@ final class OrderTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testRelationOrderProductsExistsAndReturnsRelation()
+    public function testRelationOrderProductsExistsAndReturnsRelation(): void
     {
         $model = new Order();
         self::assertTrue(method_exists($model, 'orderProducts'));
@@ -76,56 +76,55 @@ final class OrderTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Order();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForCustomerIdIsInt()
+    public function testCastForCustomerIdIsInt(): void
     {
         $model = new Order();
         self::assertArrayHasKey('customer_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['customer_id']);
     }
 
-    public function testCastForBillingAddressIdIsInt()
+    public function testCastForBillingAddressIdIsInt(): void
     {
         $model = new Order();
         self::assertArrayHasKey('billing_address_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['billing_address_id']);
     }
 
-    public function testCastForShippingAddressIdIsInt()
+    public function testCastForShippingAddressIdIsInt(): void
     {
         $model = new Order();
         self::assertArrayHasKey('shipping_address_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['shipping_address_id']);
     }
 
-    public function testCastForTotalAmountIsFloat()
+    public function testCastForTotalAmountIsFloat(): void
     {
         $model = new Order();
         self::assertArrayHasKey('total_amount', $model->getCasts());
         self::assertSame('float', $model->getCasts()['total_amount']);
     }
 
-    public function testCastForDiscountAmountIsFloat()
+    public function testCastForDiscountAmountIsFloat(): void
     {
         $model = new Order();
         self::assertArrayHasKey('discount_amount', $model->getCasts());
         self::assertSame('float', $model->getCasts()['discount_amount']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Order::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Order::factory()->make();
         self::assertInstanceOf(Order::class, $instance);
     }

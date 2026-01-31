@@ -17,7 +17,7 @@ final class BillingAddressTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new BillingAddress();
         $expected = [
@@ -36,7 +36,7 @@ final class BillingAddressTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testRelationCustomerExistsAndReturnsRelation()
+    public function testRelationCustomerExistsAndReturnsRelation(): void
     {
         $model = new BillingAddress();
         self::assertTrue(method_exists($model, 'customer'));
@@ -44,7 +44,7 @@ final class BillingAddressTest extends TestCase
         self::assertInstanceOf(BelongsTo::class, $relation);
     }
 
-    public function testRelationOrdersExistsAndReturnsRelation()
+    public function testRelationOrdersExistsAndReturnsRelation(): void
     {
         $model = new BillingAddress();
         self::assertTrue(method_exists($model, 'orders'));
@@ -52,28 +52,27 @@ final class BillingAddressTest extends TestCase
         self::assertInstanceOf(HasMany::class, $relation);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new BillingAddress();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForCustomerIdIsInt()
+    public function testCastForCustomerIdIsInt(): void
     {
         $model = new BillingAddress();
         self::assertArrayHasKey('customer_id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['customer_id']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(BillingAddress::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = BillingAddress::factory()->make();
         self::assertInstanceOf(BillingAddress::class, $instance);
     }

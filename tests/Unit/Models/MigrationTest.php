@@ -15,7 +15,7 @@ final class MigrationTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function testFillableContainsExpectedAttributes()
+    public function testFillableContainsExpectedAttributes(): void
     {
         $model = new Migration();
         $expected = [
@@ -28,28 +28,27 @@ final class MigrationTest extends TestCase
         self::assertSame($expected, $actual);
     }
 
-    public function testCastForIdIsInt()
+    public function testCastForIdIsInt(): void
     {
         $model = new Migration();
         self::assertArrayHasKey('id', $model->getCasts());
         self::assertSame('int', $model->getCasts()['id']);
     }
 
-    public function testCastForBatchIsInt()
+    public function testCastForBatchIsInt(): void
     {
         $model = new Migration();
         self::assertArrayHasKey('batch', $model->getCasts());
         self::assertSame('int', $model->getCasts()['batch']);
     }
 
-    public function testFactoryCanMakeInstance()
+    public function testFactoryCanMakeInstance(): void
     {
         if (!method_exists(Migration::class, 'factory')) {
             self::assertTrue(true);
 
             return;
         }
-
         $instance = Migration::factory()->make();
         self::assertInstanceOf(Migration::class, $instance);
     }
