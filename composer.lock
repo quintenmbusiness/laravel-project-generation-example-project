@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c514d8f7b9fc5970bdd94287905ef584",
+    "content-hash": "2191301ecb0aca8935b9a885e70b3ef0",
     "packages": [
         {
             "name": "brick/math",
@@ -3091,6 +3091,108 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.19"
             },
             "time": "2026-01-30T17:33:13+00:00"
+        },
+        {
+            "name": "quintenmbusiness/laravel-analyzer",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quintenmbusiness/LaravelAnalyzer.git",
+                "reference": "145337ba9cf8dc366d07829dc00e12fd2010560e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quintenmbusiness/LaravelAnalyzer/zipball/145337ba9cf8dc366d07829dc00e12fd2010560e",
+                "reference": "145337ba9cf8dc366d07829dc00e12fd2010560e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^11.0 | ^12.0",
+                "laravel/framework": "^11.0 | ^12.0",
+                "nikic/php-parser": "^5.7",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "quintenmbusiness\\LaravelAnalyzer\\Laravel\\app\\Providers\\LaravelAnalyzerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "quintenmbusiness\\LaravelAnalyzer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Quinten Muijser",
+                    "email": "quintenm.business@outlook.com"
+                }
+            ],
+            "description": "Generates all the classes you can think of for your laravel application using only migration files",
+            "support": {
+                "issues": "https://github.com/quintenmbusiness/LaravelAnalyzer/issues",
+                "source": "https://github.com/quintenmbusiness/LaravelAnalyzer/tree/1.3"
+            },
+            "time": "2026-01-28T21:12:26+00:00"
+        },
+        {
+            "name": "quintenmbusiness/laravel-project-generation",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/quintenmbusiness/laravel-project-generation.git",
+                "reference": "54b55436209e60da76f811033008d090ea680889"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/quintenmbusiness/laravel-project-generation/zipball/54b55436209e60da76f811033008d090ea680889",
+                "reference": "54b55436209e60da76f811033008d090ea680889",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/prompts": "^0.3.0@dev",
+                "php": "^8.1",
+                "quintenmbusiness/laravel-analyzer": "1.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "quintenmbusiness\\LaravelProjectGeneration\\LaravelProjectGenerationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "quintenmbusiness\\LaravelProjectGeneration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Quinten Muijser",
+                    "email": "quintenm.business@outlook.com"
+                }
+            ],
+            "description": "Generates all the classes you can think of for your laravel application using only migration files",
+            "support": {
+                "issues": "https://github.com/quintenmbusiness/laravel-project-generation/issues",
+                "source": "https://github.com/quintenmbusiness/laravel-project-generation/tree/0.1.1"
+            },
+            "time": "2026-01-29T23:34:59+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
