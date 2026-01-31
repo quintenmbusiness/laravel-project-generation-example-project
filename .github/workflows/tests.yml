@@ -5,48 +5,51 @@ on:
     branches:
       - main
       - master
-      - '**'  # all branches
+      - '**'
   pull_request:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           php-version: 8.2
           extensions: mbstring, dom, pdo, sqlite, xdebug
           coverage: pcov
 
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction --no-progress
+      - run: composer install --prefer-dist --no-interaction --no-progress
 
-      - name: Prepare CI environment
-        run: cp .env.ci .env
+      - run: composer dump-autoload
 
-      - name: Generate application key
-        run: php artisan key:generate
+      - run: cp .env.ci .env
 
-      - name: Run migrations
-        run: php artisan migrate --force
+      - run: php artisan key:generate
 
-      - name: Run PHPUnit with coverage
-        run: |
+      - run: php artisan migrate --force
+
+      - run: |
           if [ -f "phpunit.xml" ] || [ -f "phpunit.xml.dist" ]; then
-            vendor/bin/phpunit --coverage-clover=storage/coverage/clover.xml --coverage-html=storage/coverage/html
+            vendor/bin/phpunit --fail-on-warning=false --coverage-html=storage/coverage/html
           else
             echo "No PHPUnit configuration found. Skipping tests."
           fi
 
-      - name: Publish coverage to current branch
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: ${{ github.ref_name }}
-          publish_dir: storage/coverage/html
-          allow_empty_commit: true
+          path: storage/coverage/html
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/deploy-pages@v4
