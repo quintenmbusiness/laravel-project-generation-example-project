@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\factories;
 
 use App\Models\Migration;
 use Illuminate\Database\Eloquent\Factories\Factory;
