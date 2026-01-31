@@ -1,41 +1,47 @@
 <?php
+
 namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Customer;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use App\Models\Order;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use App\Models\ShippingAddress;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-class BillingAddress extends Model {
-use HasFactory;
-protected  $table = 'billing_addresses';
-public  $timestamps = true;
-protected  $fillable = [
-'customer_id',
-'label',
-'line1',
-'line2',
-'city',
-'postal_code',
-'country',
-'metadata'
-];
-protected  $casts = ['id' => 'int', 'customer_id' => 'int'];
-public function customer(): BelongsTo {
-return $this->belongsTo(Customer::class, 'customer_id', 'id');
-}
 
-public function orders(): HasMany {
-return $this->hasMany(Order::class, 'billing_address_id', 'id');
-}
+class BillingAddress extends Model
+{
+    use HasFactory;
+    public $timestamps = true;
+    protected $table = 'billing_addresses';
+    protected $fillable = [
+        'customer_id',
+        'label',
+        'line1',
+        'line2',
+        'city',
+        'postal_code',
+        'country',
+        'metadata',
+    ];
+    protected $casts = ['id' => 'int', 'customer_id' => 'int'];
 
-public function customers(): HasManyThrough {
-return $this->hasManyThrough(Customer::class, Order::class, 'billing_address_id', 'customer_id', 'id', 'id');
-}
+    public function customer(): BelongsTo
+    {
+        return $this->belongsTo(Customer::class, 'customer_id', 'id');
+    }
 
-public function shippingAddresses(): HasManyThrough {
-return $this->hasManyThrough(ShippingAddress::class, Order::class, 'billing_address_id', 'shipping_address_id', 'id', 'id');
-}
+    public function orders(): HasMany
+    {
+        return $this->hasMany(Order::class, 'billing_address_id', 'id');
+    }
+
+    public function customers(): HasManyThrough
+    {
+        return $this->hasManyThrough(Customer::class, Order::class, 'billing_address_id', 'customer_id', 'id', 'id');
+    }
+
+    public function shippingAddresses(): HasManyThrough
+    {
+        return $this->hasManyThrough(ShippingAddress::class, Order::class, 'billing_address_id', 'shipping_address_id', 'id', 'id');
+    }
 }
