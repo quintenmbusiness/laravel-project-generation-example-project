@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\factories;
 
 use App\Models\BillingAddress;
 use App\Models\Customer;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\factories;
 
 use App\Models\Product;
 use App\Models\ProductVariant;
